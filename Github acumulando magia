@@ -1,0 +1,121 @@
+print ("Bienvenido al registro del cliente y compra de varitas")
+
+clientes =  {}
+ varitas = {
+
+1 "Varita de Sauco"
+2 "Varita de Espino"
+3 "Varita de Sauce"
+4"Varita de Acebo"
+
+while True:
+  print("Opciones de varitas:")
+  for codigo, varita in varitas.items():
+  print(f"{codigo}. {varita}")
+  codigo_cliente = input("Ingrese el código del cliente (o presione 'q' para salir): ")
+
+if codigo_cliente.lower() == "q":
+  break
+  if codigo_cliente.isdigit():
+    codigo_cliente = int(codigo_cliente)
+
+if codigo_cliente.lower not in clientes:
+  cliente [codigo_cliente] = []
+
+print ("El cliente ha entradado a la tienda")
+print ("Opciones de varitas:")
+for codigo, varita in varitas.items():
+  print(f"{codigo}. {varita}")
+  codigo_varita = input("Ingrese el codigo de la varita que el cliente ha comprado")
+  if codigo_varita.isdigit() and int(codigo_varita) in varitas:
+    clientes[codigo_cliente].append(varitas[int(codigo_varita)])
+print("El cliente ha comprado la varita exitosamente")
+else:
+print("\Código de varita inválido!")
+https://replit.com/join/yvuspvncll-emirgutierrez1
+
+
+clientes = {}
+
+def registrar_cliente(nombre_cliente, varita_comprada):
+    if nombre_cliente not in clientes:
+        clientes[nombre_cliente] = []
+    clientes[nombre_cliente].append(varita_comprada)
+
+def mostrar_clientes():
+for cliente, varitas in clientes.items():
+if len(varitas) > 0:
+print(cliente)
+for varita in varitas:
+ print(" -", varita)
+
+def mostrar_opciones_varitas():
+print("Opciones de varitas:")
+print("1. Varita de Saúco")
+print("2. Varita de Espino")
+print("3. Varita de Sauce")
+print("4. Varita de Acebo")
+
+mostrar_opciones_varitas()
+
+while True:
+    nombre = input("Ingrese el nombre del cliente (o 'salir' para terminar): ")
+    if nombre.lower() == "salir":
+        break
+
+    varita = input("Ingrese el número de la varita comprada: ")
+    registrar_cliente(nombre, varita)
+
+mostrar_clientes()
+https://replit.com/join/vlwxylnofj-emirgutierrez1
+
+
+
+
+texto = input("Escribe un texto: ")
+palabras = texto.split()  
+conteo = palabras.count("Alexa")  
+
+if conteo > 1:
+print("Tranquilo, solo di mi nombre una vez")
+elif conteo == 1:
+print("Alexa está en el texto")
+else:
+print("Alexa no está en el texto")
+https://replit.com/join/svpevwtpqz-emirgutierrez1
+
+
+if event == "goal":
+    team = input("¿Qué equipo anotó (Gryffindor o Slytherin): ")
+    if team == "Gryffindor":
+        gryffindor_score += 10
+    elif team == "Slytherin":
+        slytherin_score += 10
+elif event == "snitch":
+    team = input("¿Qué equipo atrapó la Snitch (Gryffindor o Slytherin): ")
+    if team == "Gryffindor":
+        gryffindor_score += 150
+    elif team == "Slytherin":
+        slytherin_score += 150
+elif event == "foul":
+    team = input("¿Qué equipo cometió una falta (Gryffindor o Slytherin): ")
+    if team == "Gryffindor":
+        gryffindor_score -= 30
+    elif team == "Slytherin":
+        slytherin_score -= 30
+print("Gryffindor:", gryffindor_score, "puntos")
+print("Slytherin:", slytherin_score, "puntos")
+
+if gryffindor_score > slytherin_score:
+print("¡Gryffindor gana!")
+elif slytherin_score > gryffindor_score:
+print("¡Slytherin gana!")
+else:
+print("¡Empate!")
+
+
+https://replit.com/join/uqcnpxpyod-emirgutierrez1
+
+
+
+
